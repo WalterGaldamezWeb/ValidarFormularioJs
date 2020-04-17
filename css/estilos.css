@@ -1,0 +1,14 @@
+label, div{    
+    font-family: "Lucida San Unicode","Lucida Grande",sans-serif;
+    font-size: 14px;
+    color: #669;
+}
+span{
+    font-family: "Lucida San Unicode","Lucida Grande",sans-serif;
+    font-size: 14px;
+    color: red;
+}
+.fondo{
+    color: #36A0ff;
+}
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/alertify.min.css" type="text/css">
+        <link rel="stylesheet" href="css/themes/default.css">
+        <script type="text/javascript" src="js/funciones.js"></script>
+        <script type="text/javascript" src="js/alertify.min.js"></script>      
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <br>
+                    <center>
+                        <h3>Validar Formulario con JavaScript</h3>
+                    </center>
+                    <br>                    
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">        
+                    <form name="forma" action="" method="POST" onsubmit="return validarForma(this);">
+                        <div class="form-group row">
+                            <label class="col-sm-2">Usuario: <span>*</span></label>
+                            <div class="col-sm-10">
+                                <input name="usuario" class="form-control" type="text" placeholder="Escribir Ususario">
+                            </div>
+                        </div>
+                        <div class="form-group row">        
+                            <label class="col-sm-2">Contrase&ntilde;a: <span>*</span></label>
+                            <div class="col-sm-10">
+                                <input name="password" class="form-control" type="password" placeholder="Escribe la Contrase&ntilde;a">
+                            </div>
+                        </div>
+                        <div class="form-group row">                        
+                            <div class="col-sm-2">
+                                Lenguajes de Programaci&oacute;n: <span>*</span>
+                            </div>                            
+                            <div class="col-sm-10">                         
+                                <div class="form-check">
+                                    <input type="checkbox" name="tecnologias" value="java" class="form-check-input">
+                                    <label class="form-check-label">
+                                    Java
+                                    </label>
+                                </div>   
+                                <div class="form-check">                    
+                                    <input type="checkbox" name="tecnologias" value="net" class="form-check-input">
+                                    <label class="form-check-label">.Net</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" name="tecnologias" value="php" class="form-check-input">
+                                    <label class="form-check-label">Php</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">                        
+                            <div class="col-sm-2">
+                                G&eacute;nero: <span>*</span>
+                            </div>                            
+                            <div class="col-sm-10">                         
+                                <div class="form-check">
+                                    <input type="radio" name="genero" value="H" class="form-check-input">
+                                    <label class="form-check-label">Hombre</label>
+                                </div>   
+                                <div class="form-check">                   
+                                    <input type="radio" name="genero" value="M" class="form-check-input">
+                                    <label class="form-check-label">Mujer</label>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="form-group row">                        
+                            <div class="col-sm-2">
+                                Profesi&oacute;n: <span>*</span>
+                            </div>                            
+                            <div class="col-sm-4">                         
+                                <select name="profesion" class="custom-select">
+                                    <option value="">Seleccionar</option>
+                                    <option value="0">Profesor</option>
+                                    <option value="1">Ingeniero</option>
+                                    <option value="2">Programador</option>
+                                    <option value="3">Arquitecto</option>
+                                    <option value="4">Dise&ntilde;ador</option>
+                                </select>                                
+                            </div>
+                        </div>
+                        <div class="form-group row">                        
+                            <div class="col-sm-2">
+                                Otras Habilidades:
+                            </div>                            
+                            <div class="col-sm-4">                         
+                                <select name="otros" class="custom-select">
+                                    <option value="">Seleccionar</option>
+                                    <option value="rock">Bases de Datos</option>
+                                    <option value="pop">Linux</option>
+                                    <option value="salsa">Android</option>
+                                </select>                                
+                            </div>
+                        </div>
+                        <div class="form-group row">                        
+                            <div class="col-sm-2">
+                                Comentarios:
+                            </div>                            
+                            <div class="col-sm-6">                         
+                                <textarea class="form-control" name="comentarios" onfocus="this.select();" placeholder="Escribir Comentario">
+                                </textarea>                                
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">                        
+                            <div class="col-md-12">
+                                <center>
+                                <input type="reset" name="reset" value="Limpiar" class="btn btn-primary btn-lg">
+                                <input type="submit" name="enviar" value="Enviar" class="btn btn-primary btn-lg">
+                                </center>
+                                <br>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>       
+    </body>    
+</html>
